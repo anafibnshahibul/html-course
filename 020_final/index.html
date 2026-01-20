@@ -1,0 +1,287 @@
+<!-- sorry for the wite CSS-->
+<!DOCTYPE html><!-- this is the starting of HTML-->
+<html lang="en"><!-- HTML starts from there. lang mean what is the language of your web page-->
+<head><!--This is basically the head of a web page that is not visible on the web page.-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A pure HTML/CSS showcase page">
+    <title>The HTML Showcase</title><!-- title of your web page-->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* --- GLOBAL VARIABLES --- */
+        :root {
+            --bg-color: #f1f1f1;
+            --card-bg: #161b22;
+            --border-color: #30363d;
+            --accent: #58a6ff;
+            --text-main: #000000;
+            --text-muted: #010304;
+            --success: #238636;
+            --danger: #da3633;
+        }
+
+        /* --- RESET & BASE STYLES --- */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+ 
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#typography">Typography</a></li>
+            <li><a href="#media">Media</a></li>
+            <li><a href="#forms">Forms</a></li>
+            <li><a href="#data">Data</a></li>
+            <li><a href="#interactive">Interactive</a></li>
+        </ul>
+    </nav>
+
+    <header class="container">
+        <h1>HTML5 All-in-One</h1>
+        <p>A pure <mark>HTML & CSS</mark> masterpiece showcasing standard tags.</p>
+        <div style="margin-top: 20px;">
+            <time datetime="2024-01-01">Est. 2024</time>
+        </div>
+    </header>
+
+    <main class="container"><!--This is for the end website's main content-->
+
+        <section id="typography">
+            <h2>Typography & Text Formatting</h2>
+            <div class="typo-box">
+                <h1>Heading Level 1</h1>
+                <h3>Heading Level 3</h3>
+                <h6>Heading Level 6</h6>
+                <hr>
+                
+                <p>
+                    This is a standard paragraph but it contains <strong>strong (bold)</strong> text, 
+                    <em>emphasized (italic)</em> text, and <u>underlined text</u>. 
+                    You can also see <del>deleted text</del> and <ins>inserted text</ins>.
+                </p>
+                <p>
+                    Chemical formula: H<sub>2</sub>O (Subscript). 
+                    Math: E = mc<sup>2</sup> (Superscript).
+                    <small>This is small print for disclaimers.</small>
+                </p>
+                <p>
+                    <abbr title="HyperText Markup Language">HTML</abbr> is an abbreviation.
+                    <q>This is a short inline quote.</q>
+                </p>
+
+                <p>
+                    Japanese with Ruby tag: <ruby>漢 <rp>(</rp><rt>kan</rt><rp>)</rp> 字 <rp>(</rp><rt>ji</rt><rp>)</rp></ruby>
+                </p>
+
+                <pre><code>
+function helloWorld() {
+    console.log("No JS execution here!");
+}
+                </code></pre>
+                <p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy.</p>
+
+                <blockquote>
+                    <p>The web is a canvas, and tags are your brushes.</p>
+                    <cite>— Unknown Developer</cite>
+                </blockquote>
+            </div>
+        </section>
+
+        <section>
+            <h2>Lists & Definitions</h2>
+            <div class="list-grid">
+                <div>
+                    <h4>Unordered List</h4>
+                    <ul>
+                        <li>Frontend</li>
+                        <li>Backend</li>
+                        <li>DevOps</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Ordered List</h4>
+                    <ol type="I">
+                        <li>Planning</li>
+                        <li>Designing</li>
+                        <li>Coding</li>
+                    </ol>
+                </div>
+                <div>
+                    <h4>Definition List</h4>
+                    <dl>
+                        <dt>HTML</dt>
+                        <dd>Structure of the web.</dd>
+                        <dt>CSS</dt>
+                        <dd>Presentation of the web.</dd>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        <section id="media">
+            <h2>Multimedia</h2>
+            <div class="list-grid">
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=400&q=80" alt="Coding">
+                    <figcaption>Fig.1 - A coding environment</figcaption>
+                </figure>
+                
+                <div>
+                    <h4>Audio Element</h4>
+                    <audio controls style="width: 100%; margin-bottom: 20px;">
+                        <source src="dummy-audio.mp3" type="audio/mpeg">
+                        Your browser does not support audio.
+                    </audio>
+
+                    <h4>Video Element</h4>
+                    <video controls width="100%" poster="https://via.placeholder.com/300x150/000000/ffffff?text=Video+Poster">
+                        <source src="dummy-video.mp4" type="video/mp4">
+                        Your browser does not support video.
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <section id="forms">
+            <h2>Complex Form Elements</h2>
+            <form>
+                
+                <fieldset>
+                    <legend>Personal Info</legend>
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="John Doe" autofocus>
+                    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="john@example.com">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferences (Rare Inputs)</legend>
+                    
+                    <label for="color">Favorite Color</label>
+                    <input type="color" id="color" value="#58a6ff">
+
+                    <label for="range">Skill Level (Range)</label>
+                    <input type="range" id="range" min="0" max="100">
+
+                    <label for="date">Date Picker</label>
+                    <input type="date" id="date">
+
+                    <label for="browser">Choose Browser (Datalist)</label>
+                    <input list="browsers" name="browser" id="browser">
+                    <datalist id="browsers">
+                        <option value="Chrome">
+                        <option value="Firefox">
+                        <option value="Safari">
+                        <option value="Edge">
+                    </datalist>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Options</legend>
+                    <label>
+                        <input type="checkbox" checked> Subscribe to newsletter
+                    </label>
+                    <div style="margin-top: 10px;">
+                        <label style="display:inline;"><input type="radio" name="gender"> Male</label>
+                        <label style="display:inline;"><input type="radio" name="gender"> Female</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Upload & Message</legend>
+                    <input type="file" multiple>
+                    <textarea rows="3" placeholder="Your bio here..."></textarea>
+                </fieldset>
+
+                <button type="submit">Submit Data (Demo)</button>
+            </form>
+        </section>
+
+        <section id="data">
+            <h2>Data Representation</h2>
+            <table>
+                <caption>Employee Data Sheet</caption>
+                <colgroup>
+                    <col span="1" style="background-color: #161b22">
+                    <col style="background-color: rgba(255,255,255,0.02)">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Role</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#101</td>
+                        <td>Alice</td>
+                        <td>Developer</td>
+                        <td>Active</td>
+                    </tr>
+                    <tr>
+                        <td>#102</td>
+                        <td>Bob</td>
+                        <td>Designer</td>
+                        <td>On Leave</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4" style="text-align: center;">Total: 2 Employees</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section id="interactive">
+            <h2>Interactive (No JS) & Semantic</h2>
+            
+            <details open>
+                <summary>Click to collapse me (I am open by default)</summary>
+                <p>This is the content inside the details tag. It works without JavaScript!</p>
+            </details>
+            <details>
+                <summary>Click to expand me</summary>
+                <p>Here is some hidden information revealed purely by HTML5 magic.</p>
+            </details>
+
+            <div style="margin-top: 30px;">
+                <h4>Visual Indicators</h4>
+                <label>File Upload Progress:</label>
+                <progress value="70" max="100"></progress>
+                
+                <label>Disk Usage (Meter):</label>
+                <meter value="0.6">60%</meter>
+            </div>
+
+            <div style="margin-top: 30px; border: 1px dashed #555; padding: 20px;">
+                <p>Native Dialog Box (Simulation):</p>
+                <dialog open style="position: relative; top:0; left:0; display:block; border:1px solid var(--accent); background: #000; color: #fff; padding: 20px;">
+                    <p>This is a &lt;dialog&gt; element.</p>
+                </dialog>
+            </div>
+        </section>
+
+        <section>
+            <h2>Embedded Content (Iframe)</h2>
+            <iframe src="https://bn.wikipedia.org/wiki/" style="width: 100%; height: 200px; border: 1px solid var(--border-color); background: #fff;"></iframe>
+        </section>
+
+    </main>
+
+    <footer class="container">
+        <address>
+            Created by <strong>Gemini</strong><br>
+            Dhaka, Bangladesh<br>
+            <a href="mailto:example@email.com">contact@gemini.ai</a>
+        </address>
+        <p style="margin-top: 20px;">&copy; 2024 HTML5 Showcase. <small>Built with Semantic HTML.</small></p>
+    </footer>
+
+</body>
+</html>

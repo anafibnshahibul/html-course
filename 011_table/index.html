@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" href="img/logo.png">
+  <title>HTML Table</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!--Old table type-->
+  <!--Vertical Table-->
+  <table><!--This table tag-->
+    <tr>
+      <th>Roll No.</th><!-- this tag is used for table head/colum-->
+      <th>Name</th>
+      <th>Result</th>
+    </tr><!--<tr> mean table row-->
+    <tr>
+      <td>01</td><!--<td> mean table data-->
+      <td>Anaf Ibn Shahibul</td>
+      <td>A+</td>
+    </tr>
+    <tr>
+      <td>02</td>
+      <td>Sani Ahmed</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>03</td>
+      <td>Alif Madbor</td>
+      <td>A-</td>
+    </tr>
+  </table>
+
+  <!--Horizontal Table-->
+  <table>
+    <tr>
+      <th>Serial</th>
+      <td>01</td>
+      <td>02</td>
+      <td>03</td>
+    </tr>
+    <tr>
+      <th>Language</th>
+      <td>HTML</td>
+      <td>CSS</td>
+      <td>JS</td>
+    </tr>
+    <tr>
+      <th>Fun</th>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+  </table>
+  
+  <!-- Advance and new table type. This is the proper way of a table in HTML5-->
+ <table>
+    <caption>Employee Data Sheet</caption><!-- this is for any caption-->
+      <colgroup>
+        <col span="1" style="background-color: #ffffff">
+        <col style="background-color: #fff">
+      </colgroup>
+      <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Role</th>
+            <th>Status</th>
+           </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td>#101</td>
+              <td>Alice</td>
+              <td>Developer</td>
+              <td>Active</td>
+            </tr>
+            <tr>
+              <td>#102</td>
+              <td>Bob</td>
+              <td>Designer</td>
+              <td>On Leave</td>
+            </tr>
+         </tbody>
+         <tfoot>
+            <tr>
+              <td colspan="4" style="text-align: center;">Total: 2 Employees</td>
+            </tr>
+          </tfoot>
+    </table>
+
+</body>
+
+</html>

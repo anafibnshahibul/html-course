@@ -1,0 +1,10 @@
+q {
+  font-size: 25px;
+  color: rgb(41, 40, 39);
+}
+img {
+  width: 200px;
+  background-color: black;
+  align-items: center;
+  margin: 6px 6px 6px auto;
+}

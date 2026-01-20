@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>A Attribute</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy.</p><!--This basically displays the button.-->
+
+    <blockquote><!--This is for the blockquote-->
+        <p>The web is a canvas, and tags are your brushes.</p>
+        <cite>— Unknown Developer</cite><!-- it's for the citation-->
+     </blockquote>
+
+     <!-- this tag is using for some Asian words of Chinese, Japanies and Arabc-->
+      <p>
+        <ruby>
+            漢 <rp>(</rp><rt>kan</rt><rp>)</rp> 字 <rp>(</rp><rt>ji</rt><rp>)</rp>
+        </ruby>
+      </p>
+      <!-- this is using for a progress bar-->
+       <label for="file">Downloading progress:</label>
+       <progress id="file" value="32" max="100"> 32% </progress>
+       <br>
+       <!--meter-->
+       <label>Disk Usage (Meter):</label>
+        <meter value="0.6">60%</meter>
+
+        <!-- this is first search bar-->
+        <search>
+         <form>
+            <input name="fsrch" id="fsrch" placeholder="Search.....">
+         </form>
+        </search>
+        <!-- dialogue tag -->
+         <dialog open style="position: relative; top:0; left:0; display:block; border:1px solid var(--accent); background: #000; color: #fff; padding: 20px;">
+            <p>This is a &lt;dialog&gt; element.</p>
+         </dialog>
+
+</body>
+</html>

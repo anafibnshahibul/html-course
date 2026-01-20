@@ -1,0 +1,6 @@
+       /* This part is just to make the boxes visible */
+        .box {
+            border: 2px solid black;
+            padding: 10px;
+            margin: 10px;
+        }

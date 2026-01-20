@@ -1,0 +1,20 @@
+*{
+    align-items: center;
+    margin: 6px 6px;
+}
+video {
+  width: 500px;
+}
+q {
+  font-size: 25px;
+  color: rgb(41, 40, 39);
+}
+img {
+  width: 200px;
+  background-color: black;
+  align-items: center;
+  margin: 6px 6px 6px auto;
+}
+mark {
+  background-color: rgb(255, 0, 0);
+}

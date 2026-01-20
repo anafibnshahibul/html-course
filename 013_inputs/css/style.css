@@ -1,0 +1,16 @@
+       label { display: block; margin-bottom: 5px; font-weight: 500; }
+        input, select, textarea, button {
+            width: 100%;
+            padding: 10px;
+            background: #ffffff;
+            border: 1px solid var(--border-color);
+            color: #000000;
+            border-radius: 6px;
+            font-family: inherit;
+        }
+        
+        /* Interactive Inputs Styles */
+        input[type="range"] { padding: 0; }
+        input[type="color"] { height: 40px; padding: 0; cursor: pointer; }
+        input[type="checkbox"], input[type="radio"] { width: auto; margin-right: 10px; }
+        
